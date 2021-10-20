@@ -117,34 +117,49 @@
                   <div class="heading-title" style="font-size: 50px;"><span style="text-shadow: 0px 0px 4px #000; color: #fff;">Shenlong Illuminae Healing Center</span></div>
                   <!--<div class="buttons-section"><a class="btn dark-btn large-btn smooth-scroll" style="color: #000066;" href="#contact">Book Now</a></div>-->
 
-                  <div class="col-md-6 col-md-offset-1">
-                    <form class="form-inline" role="form" action="" id="contactForm" name="contactForm" method="POST">
-                      <input type="text" name="name" id="name" placeholder="Name">
-                      <input type="text" name="phone" id="phone" placeholder="Phone Number">
-                      <input type="email" name="email" id="email" placeholder="Email">
-                      <!--<div class="g-recaptcha" data-sitekey="6LftqOIcAAAAACrLf1WLF-V6Vk6m_Sg7MQh7A9Oa" ></div>-->
-                      <div class="form-group">
-                          <input type="hidden" name="captcha_token" id="recaptchaResponse" data-sitekey="6LftqOIcAAAAACrLf1WLF-V6Vk6m_Sg7MQh7A9Oa">
-                      </div>
-                      <input class="btn white-btn" type="submit" data-callback='onSubmit' name="submit" id="submit" value="Free Consultation">
-                    </form> 
+                  <div class="container">
+                    <div class="row">
 
-                   <div class="status">
-                     <?php
-                     if (isset($_POST['submit'])) {
-                          if (empty($_POST['name'])) {
-                             echo "<span>Invalid Name</span>";
-                          } else if (empty($_POST['phone'])) {
-                             echo "<span>Invalid Phone Number</span>";
-                          } else if (empty($_POST['email'])) {
-                             echo "<span>Invalid Email Address</span>";
-                          } else {
-                              require "contact.php";
+                      <div class="col-md-5">
+                        <form class="form-inline" role="form" action="" id="contactForm" name="contactForm" method="POST">
+                          <input type="text" name="name" id="name" placeholder="Name">
+                          <input type="text" name="phone" id="phone" placeholder="Phone Number">
+                          <input type="email" name="email" id="email" placeholder="Email">
+                          <!--<div class="g-recaptcha" data-sitekey="6LftqOIcAAAAACrLf1WLF-V6Vk6m_Sg7MQh7A9Oa" ></div>-->
+                          <div class="form-group">
+                              <input type="hidden" name="captcha_token" id="recaptchaResponse" data-sitekey="6LftqOIcAAAAACrLf1WLF-V6Vk6m_Sg7MQh7A9Oa">
+                          </div>
+                          <input class="btn white-btn" type="submit" data-callback='onSubmit' name="submit" id="submit" value="Free Consultation">
+                        </form> 
+
+                       <div class="status">
+                         <?php
+                         if (isset($_POST['submit'])) {
+                              if (empty($_POST['name'])) {
+                                 echo "<span>Invalid Name</span>";
+                              } else if (empty($_POST['phone'])) {
+                                 echo "<span>Invalid Phone Number</span>";
+                              } else if (empty($_POST['email'])) {
+                                 echo "<span>Invalid Email Address</span>";
+                              } else {
+                                  require "contact.php";
+                              }
                           }
-                      }
-                      ?> 
-                  </div> 
+                          ?> 
+                      </div> 
+                    </div>
+
+                    <div class="col-md-6 col-md-offset-1">
+                      <div class="video-iframe">
+                         <video controls style="width: 100%; height: auto;">
+                          <source src="/video/jenn_intro_filter.mp4" type="video/mp4">
+                          Your browser does not support the video element. Kindly update it to latest version.
+                        </video > 
+                      </div>
+                    </div>
+
                 </div>
+              </div>
 
 
                 </div>
