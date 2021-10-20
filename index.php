@@ -29,7 +29,6 @@
           <ul class="sf-menu">
             <!--Menu default-->
             <li><a class="smooth-scroll" href="#services">Services</a></li>
-            <li><a class="smooth-scroll" href="#certifications">Certifications</a></li>
             <li> <a class="smooth-scroll" href="#contact">Contact</a></li>
           </ul>
             <!-- <a class="toggle-mnu" href="#"><span></span></a>
@@ -41,7 +40,6 @@
             <nav>
               <ul class="nav_menu">
                 <li><a class="smooth-scroll" href="#services">Services</a></li>
-                <li><a class="smooth-scroll" href="#certifications">Certifications</a></li>
                 <li> <a class="smooth-scroll" href="#contact">Contact</a></li>
               </ul>
             </nav>
