@@ -98,8 +98,8 @@
         <div id="status"></div>
       </div>
       <div class="full-slider intro">
-        <!-- Start slide-->
-        <div class="slide background-image full-vh" data-image="img/dragon_green_bg.jpg">
+                <!-- Start slide-->
+        <div class="slide bg-mask background-image full-vh" data-image="img/dragon_green_bg.jpg">
           <div class="container-slide vertical-align center">
             <div class="container">
               <div class="row">
@@ -115,52 +115,11 @@
                     </ul>
                   </div>
                   <div class="heading-title" style="font-size: 50px;"><span style="text-shadow: 0px 0px 4px #000; color: #fff;">Shenlong Illuminae Healing Center</span></div>
-                  <!--<div class="buttons-section"><a class="btn dark-btn large-btn smooth-scroll" style="color: #000066;" href="#contact">Book Now</a></div>-->
-
-                  <div class="container">
-                    <div class="row">
-
-                      <div class="col-md-5">
-                        <form class="form-inline" role="form" action="" id="contactForm" name="contactForm" method="POST">
-                          <input type="text" name="name" id="name" placeholder="Name">
-                          <input type="text" name="phone" id="phone" placeholder="Phone Number">
-                          <input type="email" name="email" id="email" placeholder="Email">
-                          <!--<div class="g-recaptcha" data-sitekey="6LftqOIcAAAAACrLf1WLF-V6Vk6m_Sg7MQh7A9Oa" ></div>-->
-                          <div class="form-group">
-                              <input type="hidden" name="captcha_token" id="recaptchaResponse" data-sitekey="6LftqOIcAAAAACrLf1WLF-V6Vk6m_Sg7MQh7A9Oa">
-                          </div>
-                          <input class="btn white-btn" type="submit" data-callback='onSubmit' name="submit" id="submit" value="Free Consultation">
-                        </form> 
-
-                       <div class="status">
-                         <?php
-                         if (isset($_POST['submit'])) {
-                              if (empty($_POST['name'])) {
-                                 echo "<span>Invalid Name</span>";
-                              } else if (empty($_POST['phone'])) {
-                                 echo "<span>Invalid Phone Number</span>";
-                              } else if (empty($_POST['email'])) {
-                                 echo "<span>Invalid Email Address</span>";
-                              } else {
-                                  require "contact.php";
-                              }
-                          }
-                          ?> 
-                      </div> 
-                    </div>
-
-                    <div class="col-md-6 col-md-offset-1">
-                      <div class="video-iframe">
-                         <video controls style="width: 100%; height: auto;">
-                          <source src="/video/jenn_intro_filter.mp4" type="video/mp4">
-                          Your browser does not support the video element. Kindly update it to latest version.
-                        </video > 
-                      </div>
-                    </div>
-
                 </div>
               </div>
-
+            </div>
+          </div>
+        </div>
 
                 </div>
               </div>
@@ -169,6 +128,47 @@
         </div>
       </div>
     </div>
+
+            <!--Section trigger-->
+    <section class="section-trigger background-image" data-image="img/bg1_galaxy.jpg">
+      <div class="container">
+        <div class="row">
+           <div class="col-md-6 col-md-offset-1">
+                  <div class="video-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZR6YTgwVBJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+          <div class="col-md-5">
+            <form class="form-inline" role="form" action="" id="contactForm" name="contactForm" method="POST">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="text" name="phone" id="phone" placeholder="Phone Number">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <!--<div class="g-recaptcha" data-sitekey="6LftqOIcAAAAACrLf1WLF-V6Vk6m_Sg7MQh7A9Oa" ></div>-->
+                    <div class="form-group">
+                        <input type="hidden" name="captcha_token" id="recaptchaResponse" data-sitekey="6LftqOIcAAAAACrLf1WLF-V6Vk6m_Sg7MQh7A9Oa">
+                    </div>
+                    <input class="btn white-btn" type="submit" data-callback='onSubmit' name="submit" id="submit" value="Free Consultation">
+                  </form> 
+
+                 <div class="status">
+                   <?php
+                   if (isset($_POST['submit'])) {
+                        if (empty($_POST['name'])) {
+                           echo "<span>Invalid Name</span>";
+                        } else if (empty($_POST['phone'])) {
+                           echo "<span>Invalid Phone Number</span>";
+                        } else if (empty($_POST['email'])) {
+                           echo "<span>Invalid Email Address</span>";
+                        } else {
+                            require "contact.php";
+                        }
+                    }
+                    ?> 
+                </div> 
+              </div>
+        </div>
+      </div>
+    </section>
 
 <!--Section our some work-->
    <!-- <section class="section-portfolio background-image" id="services">
